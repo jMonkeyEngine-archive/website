@@ -1,0 +1,7 @@
+{{ with .Param "github" }}
+    <a class="item" href="{{ . }}" id="git-menu-item"><i class="github icon"></i>Github</a>
+{{ end }}
+
+{{ with .Param "discord" }}
+    <a href="{{ . }}" class="item" id="discord-menu-item"><i class="discord icon"></i>Discord</a>
+{{ end }}

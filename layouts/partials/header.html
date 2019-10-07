@@ -1,0 +1,25 @@
+<header>
+    
+    <div class="ui stackable inverted secondary menu" style="background-color: #222222;">
+        <div class="ui container">
+            <div class="item">
+                <a href="/"><img class="ui image" src="/images/jme-logo.png"/></a>
+            </div>
+
+            {{ with .Site.Menus.main }}
+                {{ range . }}
+                <a class="item" id="{{ .Name }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+                {{ end }}
+            {{ end }}
+
+            <a class="item" href="https://hub.jmonkeyengine.org">Community</a>
+            <a class="item" href="https://jmonkeystore.com">Extensions</a>
+
+
+            <div class="right menu">
+                {{ partialCached "social.html" . }} 
+            </div>
+        </div>
+    </div>
+    
+</header>

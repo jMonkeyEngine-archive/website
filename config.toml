@@ -1,0 +1,17 @@
+baseURL = "https://jmonkeyengine.org/"
+languageCode = "en-us"
+title = "jMonkeyEngine"
+theme = "fomantic"
+
+
+[params]
+    favicon = ""
+    description = "A cross-platform game engine for adventurous Java developers."
+    featured_image = "/images/main-image.jpg"
+    
+    github = "https://github.com/jMonkeyEngine/jmonkeyengine"
+    discord = "https://discord.gg/JdjhsRw"
+
+[taxonomies]
+    author = "authors"
+    tag = "tags"

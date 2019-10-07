@@ -1,0 +1,75 @@
+{{ define "main" }}
+
+	{{ partial "index-header.html" }}
+
+	<div class="ui container">
+		{{ .Content }}
+	</div>
+
+	<!-- NEWS: START -->
+	{{ $section := where .Site.RegularPages "Section" "blog" }}
+	<div class="ui container">
+		<br />
+
+		{{ range first 1 $section }}
+
+		<div class="ui raised segments">
+			<div class="ui orange segment">
+				
+				<table class="ui very basic compact table">
+					<tbody>
+						<tr>
+							
+							<td>
+								<a href="{{ .Permalink }}">
+									<h2 class="ui header">{{ .Title }}</h2>
+								</a>
+							</td>
+
+							<td class="collapsing">
+								{{ .Date.Format "02 January 2006" }}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+			
+			<div class="ui segment">
+				{{ .Summary | plainify | safeHTML }} {{ if .Truncated }} …
+					<a class="ui small compact grey label" href="{{ .Permalink }}">
+						Read More
+					</a>
+				{{ end }}
+			</div>
+
+			<div class="ui segment">
+				By:&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				{{- range .Params.authors }}
+					{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+						<img class="ui avatar image" src="{{ .Params.avatar }}" />
+						<i><span>{{ .Params.name }} ({{ .Params.username }})</span></i>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					{{ end }}
+				{{ end }}
+			</div> 
+		</div>
+
+		
+		{{ end }}
+
+		<a class="ui orange right floated button" href="/blog/">Read More News<i class="angle double right icon"></i></a>
+		<br />
+		<br />
+	</div>
+	
+	<!-- NEWS: END -->
+
+	{{ partial "index-features.html" }}
+
+	{{ partial "index-contribute.html" }}
+
+	
+
+{{ end }}

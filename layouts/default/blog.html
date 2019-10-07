@@ -1,0 +1,21 @@
+{{ define "main" }}
+    
+    <div class="ui container">
+        <br />
+        <h1>{{ .Title }}</h1>    
+        {{ .Content }}
+        <br />
+
+        {{ $paginator := .Paginator }}
+        {{ range .Paginator.Pages }}
+            {{ .Render "blog-summary" }}
+        {{ end }}
+
+        <br />
+    </div>
+
+    <script>
+        $("#Blog").addClass("active");
+    </script>
+    
+{{ end }}
