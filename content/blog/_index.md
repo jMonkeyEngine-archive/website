@@ -1,8 +1,8 @@
 ---
 menu: "main"
 title: "Blog"
-type: "default"
-layout: "blog"
+type: "blog" 
+layout: "index"
 ---
 
 All the latest news and updates from the jMonkey community.

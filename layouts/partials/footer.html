@@ -2,11 +2,26 @@
     <div class="ui inverted segment footer" style="border-radius: 0px; margin-bottom: 0px;">
         <div class="ui container">
             <br />
-            <p>
-                &copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>.
-                A free open-source game engine licensed under the <a href="https://choosealicense.com/licenses/bsd-3-clause/">BSD 3-Clause license</a>.
-                All rights reserved.
-            </p> 
+
+            <div class="ui two column stackable grid">
+
+                <div class="column">
+                    <p>
+                        &copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>.
+                        A free open-source game engine licensed under the <a href="https://choosealicense.com/licenses/bsd-3-clause/">BSD 3-Clause license</a>.
+                        All rights reserved.
+                    </p> 
+                </div>
+
+                <div class="column">
+                    <a href="https://www.patreon.com/jmonkey">
+                        <img style="float: right; width: 217px; height: 51px;" class="ui rounded fluid image" src="/images/become_a_patron_button.png">
+                    </a>
+                </div>
+
+            </div>
+
+            
             <br />
         </div>
     </div>

@@ -25,9 +25,19 @@ To get the most helpful answers, it may be useful to understand [how to get the 
 
 Our official discord server is full of friendly members that can provide useful advice through chat. Whilst a chat server is not always the best place for comprehensive answers, it does serve as a great tool for quick solutions and getting to know the members better.
 
+### [Scene Graph for Dummies](https://wiki.jmonkeyengine.org/tutorials/scenegraph/assets/fallback/index.html)
+
+A slideshow explaining how to use the scene graph in jMonkey. This guide explains how to use the scene graph effectively and understand the relationships involved. **Highly recommended** for all new users to the gaming industry.
+
+- What the scene graph is and what a `Spatial` is.
+- What a `Geometry` is and how it's appearance is defined.
+- What a `Node` is and what a parent-child relationship is.
+- How to organize the scene graph visually and logically using nodes.
+- How to hide single Spatials or whole parts of the scene graph.
+
 ### [Math For Dummies: JME Vector Math](https://wiki.jmonkeyengine.org/tutorials/math/assets/fallback/index.html)
 
-A slideshow explaining how to use vectors and quaternions in jMonkey. This guide is extremely useful to new game developers trying to understand locations and rotations. Recommended for all new users to the gaming industry.
+A slideshow explaining how to use vectors and quaternions in jMonkey. This guide is extremely useful to new game developers trying to understand locations, directions and rotations. Recommended for all new users to the gaming industry.
 
 - What vectors are and how to create them.
 - How to add, subtract, multiply and normalize vectors.
@@ -36,16 +46,6 @@ A slideshow explaining how to use vectors and quaternions in jMonkey. This guide
 - How to rotate a vector using a quaternion.
 - How to combine rotations.
 - How to use `lookAt` to create rotations.
-
-### [Scene Graph for Dummies](https://wiki.jmonkeyengine.org/tutorials/scenegraph/assets/fallback/index.html)
-
-A slideshow explaining how to use the scene graph in jMonkey. This guide explains how to use the scene graph effectively and understand the relationships involved. Highly recommended for all new users to the gaming industry.
-
-- What the scene graph is and what a `Spatial` is.
-- What a `Geometry` is and how it's appearance is defined.
-- What a `Node` is and what a parent-child relationship is.
-- How to organize the scene graph visually and logically using nodes.
-- How to hide single Spatials or whole parts of the scene graph.
 
 ### [Transparency for Dummies](https://hub.jmonkeyengine.org/t/alpha-transparency-sorting-your-z-buffer-and-you/33709)
 
