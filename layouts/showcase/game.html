@@ -1,0 +1,27 @@
+{{ define "main" }}
+    
+    <div class="ui container">
+        <br />
+        <h1>{{ .Title }}</h1>    
+        
+        {{ if isset .Params "steam_link" }}
+        <h3 class="ui header">
+            <i class="steam icon"></i>
+            <div class="content">
+                    <a target="_blank" href="{{ .Params.steam_link }}">Visit Steam Page</a>
+            </div>
+        </h3>
+        {{ end }}
+
+        <p>
+            {{ .Content }}
+        </p>
+        <br />
+    </div>
+
+    <script>
+        $("#Blog").addClass("active");
+        $('.ui.embed').embed();
+    </script>
+	
+{{ end }}

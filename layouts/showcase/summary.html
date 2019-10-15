@@ -1,0 +1,59 @@
+<div class="ui raised segments">
+        <div class="ui green segment">
+            <table class="ui very basic compact table">
+                <tbody>
+                    <tr>
+                        
+                        <td>
+                            <a href="{{ .Permalink }}">
+                                <h2 class="ui header">{{ .Title }}</h2>
+                            </a>
+                        </td>
+                        
+                        {{ if isset .Params "steam_link" }}
+                        <td class="collapsing">
+                            <a href="{{ .Params.steam_link }}"><i class="steam icon"></i>Available on Steam</a>
+                        </td>
+                        {{ end }}
+
+                        <td class="collapsing">
+                            {{ .Date.Format "02 January 2006" }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="ui segment">
+    
+            <div class="ui two column stackable grid">
+                    
+                <div class="column">
+                        <img class="ui fluid image" src="{{ .Params.feature_image }}"></a>
+                </div>
+                
+                <div class="column">
+                        {{ .Summary | plainify | safeHTML }} {{ if .Truncated }} …
+                        <a class="ui small compact grey label" href="{{ .Permalink }}">
+                            Read More
+                        </a>
+                    {{ end }}
+                </div>
+    
+            </div>
+    
+            
+        </div>
+    
+        <div class="ui segment">
+            By:&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            {{- range .Params.authors }}
+                {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                <img class="ui avatar image" src="{{ .Params.avatar }}" />
+                <span>{{ .Params.name }} ({{ .Params.username }})</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                {{ end }}
+            {{ end }}
+        </div> 
+    </div>
