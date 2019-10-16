@@ -3,15 +3,18 @@
     <div class="ui container">
         <br />
         <h1>{{ .Title }}</h1>    
-        
+        <hr class="ui divider" />
         {{ if isset .Params "steam_link" }}
-        <h3 class="ui header">
-            <i class="steam icon"></i>
-            <div class="content">
-                    <a target="_blank" href="{{ .Params.steam_link }}">Visit Steam Page</a>
-            </div>
-        </h3>
+        <i class="steam icon"></i>
+        <a target="_blank" href="{{ .Params.steam_link }}" style="margin-right: 20px;">Available on Steam</a>
         {{ end }}
+
+        {{ if isset .Params "publisher_link" }}
+        <i class="external alternate icon"></i>
+        <a target="_blank" href="{{ .Params.publisher_link }}">Visit Publisher Website</a>
+        {{ end }}
+
+        <hr class="ui divider" />
 
         <p>
             {{ .Content }}
