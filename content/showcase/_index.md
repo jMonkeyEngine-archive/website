@@ -3,6 +3,6 @@ type: "showcase"
 layout: "index"
 ---
 
-# Media Showcase
+# Games & Media Showcase
 
 Awesome games and screenshots created by the jMonkey community.

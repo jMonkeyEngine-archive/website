@@ -16,12 +16,60 @@
         <p>
             {{ .Content }}
         </p>
+
         <br />
+        <hr class="ui divider" />
+        <br />
+
+
+        <div id="gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+    
+        <div id="carousel-links">
+            
+            {{ if isset .Params "videos_webm" }}
+            {{ range .Params.videos_webm }}
+                    <a
+                        href="{{ . }}"
+                        type="video/webm"
+                        data-gallery
+                    ></a>
+                {{ end }}
+            {{ end }}
+
+            {{ if isset .Params "videos_youtube" }}
+            {{ range .Params.videos_youtube }}
+                    <a
+                        data-youtube="{{ . }}"
+                        href="https://www.youtube.com/watch/{{ . }}"
+                        type="text/html"
+                        data-gallery
+                    ></a>
+                {{ end }}
+            {{ end }}
+
+            {{ if isset .Params "images" }}
+                {{ range .Params.images }}
+                    <a href="{{ . }}"></a>
+                {{ end }}
+            {{ end }}
+
+        </div>
+
+        <br />
+
     </div>
 
     <script>
         $("#Blog").addClass("active");
-        $('.ui.embed').embed();
     </script>
+
+    <script src="/js/showcase.js" defer></script>
 	
 {{ end }}

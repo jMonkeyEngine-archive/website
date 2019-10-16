@@ -14,8 +14,27 @@ tags:
     - "steam"
     - "lightspeed frontier"
 
-feature_image: "/images/showcase/ls_frontier/2.jpg"
+feature_image: "/images/showcase/ls_frontier/10.jpg"
 steam_link: "https://store.steampowered.com/app/548650/Lightspeed_Frontier/"
+
+images: [
+    "/images/showcase/ls_frontier/1.jpg",
+    "/images/showcase/ls_frontier/2.jpg",
+    "/images/showcase/ls_frontier/3.jpg",
+    "/images/showcase/ls_frontier/4.jpg",
+    "/images/showcase/ls_frontier/5.jpg",
+    "/images/showcase/ls_frontier/6.jpg",
+    "/images/showcase/ls_frontier/7.jpg",
+    "/images/showcase/ls_frontier/8.jpg",
+    "/images/showcase/ls_frontier/9.jpg",
+    "/images/showcase/ls_frontier/10.jpg",
+    "/images/showcase/ls_frontier/11.jpg",
+]
+
+videos_webm: [
+    "https://steamcdn-a.akamaihd.net/steam/apps/256676876/movie_max.webm"
+]
+
 ---
 
 Leave everything behind and try your hand at captaining a ship on the frontier of the galaxy. Customize it piece by piece to tackle whatever adventures await you. Take on crime lords and space pirates in battle, undercut corporations that are monopolizing business, influence the galactic stock market, and become the most successful captain you can be.
@@ -33,64 +52,3 @@ Battling other ships is a key part of the game, and also one of the challenges o
 Most the parts you can come across are made according to faction orders and designs. In the outer rim, old pre-warp tech has been modified by rogue gangs and refit to still work in this day and age, albeit with questionable durability. The industrial belt of the galaxy is controlled by the Industrial Conglomerate - with everything designed for sheer strength. And tensile strength too. In the very core of the galaxy resides the United Research Alliance always has the most high tech gear known to man.
 
 Space is a massive opportunity for investment and profit which brings interstellar corporations to the frontier's outposts and space stations. These corporations can provide you with shipping contracts, protection work (or even more shady jobs once you earn their trust) or you can just simply invest into their stocks. 
-
-<div class="ui embed" data-url="https://steamcdn-a.akamaihd.net/steam/apps/256676876/movie_max.webm?t=1482276219" ></div>
-
----
-
-<div class="ui embed" data-url="https://steamcdn-a.akamaihd.net/steam/apps/256746530/movie480.webm?t=1553753600" ></div>
-
-{{< figure
-    src="/images/showcase/ls_frontier/1.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/2.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/3.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/4.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/5.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/6.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/7.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/8.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/9.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/10.jpg"
-    class="ui fluid image"
->}}
-
-{{< figure
-    src="/images/showcase/ls_frontier/11.jpg"
-    class="ui fluid image"
->}}

@@ -10,6 +10,12 @@
                             </a>
                         </td>
                         
+                        {{ if isset .Params "publisher_link" }}
+                        <td class="collapsing">
+                            <a href="{{ .Params.publisher_link }}"><i class="external alternate icon"></i>Visit Publisher</a>
+                        </td>
+                        {{ end }}
+
                         {{ if isset .Params "steam_link" }}
                         <td class="collapsing">
                             <a href="{{ .Params.steam_link }}"><i class="steam icon"></i>Available on Steam</a>

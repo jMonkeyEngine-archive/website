@@ -11,10 +11,12 @@
     <meta name="author" content="{{ . }}">{{ end }}
     
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "fomantic/semantic.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "lib/fomantic/semantic.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "lib/blueimp-gallery/2.35.0/css/blueimp-gallery.min.css" | relURL }}" />
     
     <script src="{{ "js/jquery.min.js" | relURL }}"></script>
-    <script src="{{ "fomantic/semantic.min.js" | relURL }}"></script>
+    <script src="{{ "lib/fomantic/semantic.min.js" | relURL }}"></script>
+    <script src="{{ "lib/blueimp-gallery/2.35.0/js/blueimp-gallery.min.js" | relURL }}" defer></script>
     <script src="{{ "js/custom.js" | relURL }}" defer></script>
 
     {{ with .OutputFormats.Get "RSS" -}} {{ printf `
