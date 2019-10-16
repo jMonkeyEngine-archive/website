@@ -3,9 +3,8 @@ languageCode = "en-us"
 title = "jMonkeyEngine"
 theme = "fomantic"
 
-
 [params]
-    favicon = ""
+    favicon = "favicon.ico"
     description = "A cross-platform game engine for adventurous Java developers."
     featured_image = "/images/main-image.jpg"
     

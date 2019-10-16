@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ .Title }}</title>
-    {{ with .Site.Params.description }}
-    <meta name="description" content="{{ . }}">{{ end }} {{ with .Site.Params.author }}
-    <meta name="author" content="{{ . }}">{{ end }}
+    
+    <title>{{ .Site.Title }}</title>
+    
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
     <link rel="stylesheet" href="{{ "lib/fomantic/semantic.min.css" | relURL }}">
