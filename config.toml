@@ -12,7 +12,7 @@ theme = "fomantic"
     discord = "https://discord.gg/JdjhsRw"
 
     # global_message_error = "This is an error message."
-    global_message_warning = "[ 21 Oct 2019 - 12:40 GMT ] Community Hub Services are unavailable for approximately one hour."
+    # global_message_warning = "[ 21 Oct 2019 - 12:40 GMT ] Community Hub Services are unavailable for approximately one hour."
     # global_message_info = "This is an information message."
 
 [taxonomies]
