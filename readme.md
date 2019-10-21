@@ -20,6 +20,19 @@ The `./website/public` directory contains a git repository pointing to https://g
 - Navigate to the `./website/public/` directory.
 - Commit and Push your changes.
 
+### Global Messages
+
+To enable a global message edit the `./config.toml` file. Under the `params` section are three values:
+
+```
+# global_message_error = "This is an error message."
+# global_message_warning = "This is a warning message."
+# global_message_info = "This is an information message."
+```
+
+To display a global message un-remark the type of message you want to display and amend the message accordingly.
+
+
 ### Creating News Pages
 
 To create a new blog page, create a new markdown file in the `./website/content/blog/` directory named `somename.md` and use the template below.
@@ -53,4 +66,3 @@ This is my article. There are many like it but this one is mine.
 My article is my best friend. It is my life. I must master it as I must master my life.
 
 ```
-
