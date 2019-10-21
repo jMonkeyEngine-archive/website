@@ -1,5 +1,30 @@
+{{ with .Site.Params.global_message_error }}
+  <div id="global-message-error" class="global-message">
+    <div class="ui container">
+      {{ . }}
+    </div>
+  </div>
+{{ end }}
+
+{{ with .Site.Params.global_message_warning }}
+  <div id="global-message-warning" class="global-message">
+    <div class="ui container">
+      {{ . }}
+    </div>
+  </div>
+{{ end }}
+
+{{ with .Site.Params.global_message_info }}
+  <div id="global-message-info" class="global-message">
+    <div class="ui container">
+      {{ . }}
+    </div>
+  </div>
+{{ end }}
+
+
 <header>
-    
+
     <div class="ui stackable inverted secondary menu" style="background-color: #222222;">
         <div class="ui container">
             <div class="item">
@@ -17,9 +42,9 @@
 
 
             <div class="right menu">
-                {{ partialCached "social.html" . }} 
+                {{ partialCached "social.html" . }}
             </div>
         </div>
     </div>
-    
+
 </header>

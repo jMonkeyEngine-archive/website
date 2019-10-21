@@ -7,9 +7,13 @@ theme = "fomantic"
     favicon = "favicon.ico"
     description = "A cross-platform game engine for adventurous Java developers."
     featured_image = "/images/main-image.jpg"
-    
+
     github = "https://github.com/jMonkeyEngine/jmonkeyengine"
     discord = "https://discord.gg/JdjhsRw"
+
+    # global_message_error = "This is an error message."
+    global_message_warning = "[ 21 Oct 2019 - 12:40 GMT ] Community Hub Services are unavailable for approximately one hour."
+    # global_message_info = "This is an information message."
 
 [taxonomies]
     author = "authors"
