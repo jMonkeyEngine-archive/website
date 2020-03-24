@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <title>{{ .Site.Title }}</title>
-    
+
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    
+
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
     <link rel="stylesheet" href="{{ "lib/fomantic/semantic.min.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "lib/blueimp-gallery/2.35.0/css/blueimp-gallery.min.css" | relURL }}" />
-    
+    <link rel="stylesheet" href="{{ "lib/blueimp-gallery/2.36.0/css/blueimp-gallery.min.css" | relURL }}" />
+
     <script src="{{ "js/jquery.min.js" | relURL }}"></script>
     <script src="{{ "lib/fomantic/semantic.min.js" | relURL }}"></script>
-    <script src="{{ "lib/blueimp-gallery/2.35.0/js/blueimp-gallery.min.js" | relURL }}" defer></script>
+    <script src="{{ "lib/blueimp-gallery/2.36.0/js/blueimp-gallery.min.js" | relURL }}" defer></script>
     <script src="{{ "js/custom.js" | relURL }}" defer></script>
 
     {{ with .OutputFormats.Get "RSS" -}} {{ printf `
@@ -28,7 +28,7 @@
 
 <body>
     {{ partial "header" . }}
-    
+
     {{ block "main" . }}
     {{ end }}
 
