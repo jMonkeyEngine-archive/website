@@ -19,7 +19,7 @@ https://github.com/jMonkeyEngine/jmonkeyengine/releases/tag/v3.3.0-stable
 In the early morning hours of March 31, 2020, Engine Leader Paul Speed let version 3.3.0 stable come to life.
 This stable release is a historic event in the advancement of the engine. It inclues a treasure chest of bug fixes, 
 and a gold mine full of new features. These include some major ones like Java 11 support,
-a new animation system called Monkanim, and OpenGL ES 3 support for Android. 
+a brand new animation system, many new PBR features, physics improvements, and the addition of much more Javadoc and OpenGL ES 3 support for Android. 
 There are countless other features and bugfixes included which we know you'll love! 
 For devs still using jME 3.2.4 or older, we highly recommend that you upgrade to this new version;
 for new devs just starting with jMonkey, this new release is the perfect place to begin. 
