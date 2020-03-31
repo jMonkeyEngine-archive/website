@@ -15,8 +15,7 @@ tags:
 jMonkeyEngine 3.3.0-stable has been released!
 https://github.com/jMonkeyEngine/jmonkeyengine/releases/tag/v3.3.0-stable
 
-
-In the early morning hours of March 31, 2020, Engine Leader Paul Speed let version 3.3.0 stable come to life.
+After many months of being in the works, a stable release has finally come for jME v3.3.
 This stable release is a historic event in the advancement of the engine. It inclues a treasure chest of bug fixes, 
 and a gold mine full of new features. These include some major ones like Java 11 support,
 a brand new animation system, many new PBR features, physics improvements, and the addition of much more Javadoc and OpenGL ES 3 support for Android. 
