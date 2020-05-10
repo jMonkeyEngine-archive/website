@@ -26,9 +26,9 @@ repositories {
 }
 
 dependencies {
-    implementation "org.jmonkeyengine:jme3-core:3.2.3-stable"
-    implementation "org.jmonkeyengine:jme3-desktop:3.2.3-stable"
-    implementation "org.jmonkeyengine:jme3-lwjgl:3.2.3-stable"
+    implementation "org.jmonkeyengine:jme3-core:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-desktop:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-lwjgl:3.3.2-stable"
 }
 {{< / highlight >}}
 
