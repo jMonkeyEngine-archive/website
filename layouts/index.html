@@ -15,11 +15,11 @@
 
 		<div class="ui raised segments">
 			<div class="ui orange segment">
-				
+
 				<table class="ui very basic compact table">
 					<tbody>
 						<tr>
-							
+
 							<td>
 								<a href="{{ .Permalink }}">
 									<h2 class="ui header">{{ .Title }}</h2>
@@ -34,7 +34,7 @@
 				</table>
 
 			</div>
-			
+
 			<div class="ui segment">
 				{{ .Summary | plainify | safeHTML }} {{ if .Truncated }} …
 					<a class="ui small compact grey label" href="{{ .Permalink }}">
@@ -45,7 +45,7 @@
 
 			<div class="ui segment">
 				By:&nbsp;&nbsp;&nbsp;&nbsp;
-				
+
 				{{- range .Params.authors }}
 					{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
 						<img class="ui avatar image" src="{{ .Params.avatar }}" />
@@ -53,25 +53,27 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;
 					{{ end }}
 				{{ end }}
-			</div> 
+			</div>
 		</div>
 
-		
+
 		{{ end }}
 
 		<a class="ui orange right floated button" href="/blog/">Read More News<i class="angle double right icon"></i></a>
 		<br />
 		<br />
 	</div>
-	
+
 	<!-- NEWS: END -->
 
 	{{ partial "index-showcase.html" }}
+
+	{{ partial "index-sponsor.html" }}
 
 	{{ partial "index-features.html" }}
 
 	{{ partial "index-contribute.html" }}
 
-	
+
 
 {{ end }}
