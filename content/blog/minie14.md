@@ -59,7 +59,7 @@ Pre-built Maven artifacts are served by
 Its complete source code and build scripts are in
 [a public GitHub repository](https://github.com/stephengold/Minie/releases/tag/1.4.0for32).
 And of course it has its own
-[page at Jmonkeystore](https://jmonkeystore.com/38308161-c3cf-4e23-8754-528ca8387c11).
+[page at Jmonkeystore](https://store.jmonkeyengine.org/38308161-c3cf-4e23-8754-528ca8387c11).
 
 Whether you're starting a new game project,
 dissatisfied with the official physics libraries,

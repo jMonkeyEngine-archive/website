@@ -141,7 +141,7 @@ The most satisfying thing I’ve written for jMonkey is the JmonkeyStore.
 It’s nice to create something that brings people together and provides
 so much use.
 
-https://jmonkeystore.com
+https://store.jmonkeyengine.org
 
 If I had to choose something other than the store, it would be the
 shadows project for my game Animalia.
