@@ -7,7 +7,7 @@ layout: "default"
 
 
 
-jMonkeyEngine is a feature-rich engine capabale of creating both beautiful
+jMonkeyEngine is a feature-rich engine capable of creating both beautiful
 and complex games, single-player or networked, on a wide variety of platforms.
 
 ---
